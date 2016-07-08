@@ -7,6 +7,7 @@
  **********************************************************************************************/
 /** Map relative paths to URLs. */
 const map: any = {
+  'base64-js': 'vendor/base64-js/base64js.min.js'
 };
 
 /** User packages configuration. */

@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <title>PushTest</title>
   <base href="/">
-
+  <link rel="manifest" href="/manifest.webapp">
   {{#unless environment.production}}
   <script src="/ember-cli-live-reload.js" type="text/javascript"></script>
   {{/unless}}
@@ -20,6 +20,9 @@
     <script src="{{.}}"></script>
     {{/each}}
     <script>
+      navigator.serviceWorker.register('/worker.js').then(function() {
+        console.log('registered service worker');
+      });
       System.import('system-config.js').then(function () {
         System.import('main');
       }).catch(console.error.bind(console));

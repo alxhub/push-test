@@ -29,6 +29,7 @@
   },
   "devDependencies": {
     "angular-cli": "1.0.0-beta.9",
+    "base64-js": "^1.1.2",
     "codelyzer": "0.0.20",
     "ember-cli-inject-live-reload": "1.4.0",
     "jasmine-core": "2.4.1",

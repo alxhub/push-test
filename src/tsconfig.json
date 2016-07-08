@@ -13,7 +13,12 @@
     "rootDir": ".",
     "sourceMap": true,
     "target": "es5",
-    "inlineSources": true
+    "inlineSources": true,
+    "baseUrl": ".",
+    "paths": {
+      "@angular/service-worker": "app/ngsw/index"
+    },
+    "traceResolution": true
   },
 
   "files": [
